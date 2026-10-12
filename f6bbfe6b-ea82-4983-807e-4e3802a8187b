@@ -1,0 +1,695 @@
+local _0xC4D0
+if _G.scpLibrary then
+_0xC4D0 = _G.scpLibrary
+else
+_0xC4D0 = loadstring(game:HttpGet(string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,105,109,104,101,110,110,101,49,56,55,47,83,105,108,101,110,99,101,69,108,101,114,105,117,109,47,114,101,102,115,47,104,101,97,100,115,47,109,97,105,110,47,115,114,99,47,83,105,108,101,110,99,101,69,108,101,114,105,117,109,76,105,98,114,97,114,121,46,108,117,97,117), true))()
+_G.scpLibrary = _0xC4D0
+endlocal _0xCFD8 = _G.injectLDBLogo or (function(wFrame)
+task.spawn(function()local _0x5E68
+for i=1,60 do
+_0x5E68 = wFrame:FindFirstChild(string.char(66,97,114))
+if _0x5E68 then break end
+task.wait(0.05)
+end
+if not _0x5E68 then return end
+local _0xE0B4
+for i=1,20 do
+_0xE0B4 = _0x5E68:FindFirstChild(string.char(84,111,103,103,108,101))
+if _0xE0B4 then break end
+task.wait(0.05)
+end
+if not _0xE0B4 then return end
+pcall(function()
+_0xE0B4.Image=string.char(114,98,120,97,115,115,101,116,105,100,58,47,47,51,57,50,54,51,48,53,57,48,52)_0xE0B4.ImageColor3=Color3.fromRGB(255,60,60)
+_0xE0B4.Size=UDim2.new(0,18,0,18)
+local _0x5889=_0x5E68:FindFirstChild(string.char(76,68,66,76,111,103,111)); if _0x5889 then _0x5889:Destroy() end
+local _0xC667=Instance.new(string.char(84,101,120,116,76,97,98,101,108))
+_0xC667.Name=string.char(83,67,80,76,111,103,111); _0xC667.Size=UDim2.new(0,32,0,14)
+_0xC667.Position=UDim2.new(0,22,0,2); _0xC667.BackgroundTransparency=1
+_0xC667.Text=string.char(76,68,66); _0xC667.TextColor3=Color3.fromRGB(255,80,80)
+_0xC667.TextSize=11; _0xC667.Font=Enum.Font.FredokaOne
+_0xC667.ZIndex=_0xE0B4.ZIndex+1; _0xC667.Parent=_0x5E68
+end)
+end)
+end)
+local _0xB903 = game:GetService(string.char(80,108,97,121,101,114,115))
+local _0xA3D1 = game:GetService(string.char(82,101,112,108,105,99,97,116,101,100,83,116,111,114,97,103,101))
+local _0x1659 = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))
+local _0x11A0 = game:GetService(string.char(83,116,97,114,116,101,114,71,117,105))
+local _0x5472 = _0xB903.LocalPlayer
+repeat task.wait() until _0x5472 and _0x5472.Characterlocal function _0xA10F(_0x8559,m,d)
+pcall(function() _0x11A0:SetCore(string.char(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110),{Title=_0x8559,Text=m,Duration=d or 3}) end)
+end
+local function _0x020E(_0xD859)
+_0xD859=tonumber(_0xD859)or 0
+if _0xD859>=1e12 then return(string.char(37,46,49,102,84)):format(_0xD859/1e12)
+elseif _0xD859>=1e9 then return(string.char(37,46,49,102,66)):format(_0xD859/1e9)
+elseif _0xD859>=1e6 then return(string.char(37,46,49,102,77)):format(_0xD859/1e6)
+elseif _0xD859>=1e3 then return(string.char(37,46,49,102,75)):format(_0xD859/1e3)
+else return tostring(math.floor(_0xD859)) end
+end
+local function _0xF7E1(q)
+if not q or q==""then return _0x5472 end
+local _0x03E6=q:lower()
+for _0x84FB,_0xF5D1 in ipairs(_0xB903:GetPlayers()) do
+if _0xF5D1.Name:lower()==_0x03E6 or _0xF5D1.DisplayName:lower()==_0x03E6 then return _0xF5D1 end
+end
+for _0x84FB,_0xF5D1 in ipairs(_0xB903:GetPlayers()) do
+if _0xF5D1.Name:lower():find(_0x03E6,1,true) then return _0xF5D1 end
+end
+end
+local function _0x0A4A()
+local _0xF5D1=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104))
+if _0xF5D1 and _0x5472.Character then _0xF5D1.Parent=_0x5472.Character end
+return _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(80,117,110,99,104))
+endlocal _0x7440 =string.char(104,116,116,112,115,58,47,47,112,97,115,116,101,98,105,110,46,99,111,109,47,114,97,119,47,113,68,114,121,77,85,107,121)local function _0x137F()
+local _0x6DA0,_0x0FAC=pcall(function() return game:HttpGet(_0x7440) end)
+if not _0x6DA0 then return {} end
+local _0x6336={}
+for v in _0x0FAC:gmatch(string.char(91,94,10,93,43)) do
+local _0x8559=v:match(string.char(94,37,115,42,40,46,45,41,37,115,42,36)); if _0x8559~=""then table.insert(_0x6336,_0x8559) end
+end
+return _0x6336
+end
+local function _0xA330(_0xB682)
+for _0x84FB,v in pairs(_0x137F()) do if v==_0xB682 then return true end end
+return false
+endlocal _0xD96E=false
+local _0x314D, _0xC2FC = _0xC4D0:AddWindow(string.char(239,191,189,239,191,189,32,76,68,66,32,72,85,66,32,226,128,148,32,75,101,121,32,83,121,115,116,101,109), {
+main_color = Color3.fromRGB(185,30,30),
+title_bar = {Color3.fromRGB(185,30,30), Color3.fromRGB(100,10,10)},
+background = {Color3.fromRGB(18,5,5)},
+background_transparency = 0,
+min_size = Vector2.new(600,160),
+toggle_key = Enum.KeyCode.RightShift,
+can_resize = false,
+})
+local _0x51DD,_0x84FB = _0x314D:AddTab(string.char(239,191,189,239,191,189,32,32,75,101,121))
+_0x51DD:AddLabel(string.char(226,154,161,32,76,68,66,32,72,85,66,32,32,124,32,32,77,117,115,99,108,101,32,76,101,103,101,110,100,115,32,86,53,32,32,124,32,32,77,97,100,101,32,98,121,32,71,65,76,65,88,89))
+local _0xF36A = _0x51DD:AddLabel(string.char(239,191,189,239,191,189,32,32,80,97,115,116,101,32,121,111,117,114,32,107,101,121,32,98,101,108,111,119,32,116,104,101,110,32,112,114,101,115,115,32,69,110,116,101,114))
+_0x51DD:AddTextBox(string.char(80,97,115,116,101,32,107,101,121,32,104,101,114,101,32,116,104,101,110,32,112,114,101,115,115,32,69,110,116,101,114,46,46,46), function(v)
+if _0xA330(v) then
+_0xF36A.Text =string.char(226,156,133,32,32,75,101,121,32,97,99,99,101,112,116,101,100,33,32,32,76,111,97,100,105,110,103,32,76,68,66,32,72,85,66,46,46,46)_0xD96E = true
+else
+_0xF36A.Text =string.char(226,157,140,32,32,87,114,111,110,103,32,107,101,121,33,32,32,97,115,107,32,104,111,108,105,99,104,121,108,50)end
+end,{clear=true})
+_0x51DD:AddButton(string.char(239,191,189,239,191,189,32,32,67,111,112,121,32,76,68,66,45,67,79,87,78,69,82,32,85,83,69,82), function()
+setclipboard(string.char(104,111,108,105,99,104,121,108,50))
+_0xA10F(string.char(76,68,66,32,72,85,66),string.char(226,156,133,32,76,68,66,45,67,79,87,78,69,82,32,99,111,112,105,101,100,33),3)
+end)
+injectSCPLogo(_0xC2FC)
+_0x51DD:Show()
+repeat task.wait(0.5) until _0xD96E
+_0xC2FC:Destroy()local _0x79E8 = {
+main_color = Color3.fromRGB(185,30,30),
+title_bar = {Color3.fromRGB(200,35,35), Color3.fromRGB(100,10,10)},
+background = {Color3.fromRGB(18,5,5)},
+background_transparency = 0,
+min_size = Vector2.new(600,280),
+toggle_key = Enum.KeyCode.RightShift,
+can_resize = true,
+}
+local _0x164C, _0xB079 = _0xC4D0:AddWindow(string.char(226,154,161,32,76,68,66,32,72,85,66,32,32,124,32,32,77,117,115,99,108,101,32,76,101,103,101,110,100,115,32,86,53,32,32,124,32,32,71,65,76,65,88,89), _0x79E8)
+task.defer(function() injectSCPLogo(_0xB079) end)pcall(function()
+local _0x5E68=_0xB079:FindFirstChild(string.char(66,97,114))
+if _0x5E68 then local _0xE0B4=_0x5E68:FindFirstChild(string.char(84,111,103,103,108,101))
+if _0xE0B4 then _0xE0B4.Image=string.char(114,98,120,97,115,115,101,116,105,100,58,47,47,54,48,51,49,48,55,53,57,51,49); _0xE0B4.ImageColor3=Color3.fromRGB(255,80,80) end
+end
+end)local _0x37B0,_0x84FB = _0x164C:AddTab(string.char(239,191,189,239,191,189,32,32,73,110,102,111))
+_0x37B0:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,226,154,161,32,83,67,80,32,72,85,66,32,73,78,70,79,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,83,99,114,105,112,116,58,32,32,32,76,68,66,32,72,85,66,32,32,124,32,32,77,117,115,99,108,101,32,76,101,103,101,110,100,115,32,86,53))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,65,117,116,104,111,114,58,32,32,32,76,68,66,32,32,40,76,68,66,95,71,65,76,65,88,89,41))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,86,101,114,115,105,111,110,58,32,32,52,46,53))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,75,101,121,58,32,32,32,32,32,32,72,97,98,108,97,32,99,111,110,32,108,111,115,32,99,114,101,97,100,111,114,101,115))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,74,79,73,78,32,76,68,66))
+_0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,84,111,103,103,108,101,58,32,32,32,82,105,103,104,116,83,104,105,102,116,32,107,101,121))
+_0x37B0:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,76,73,86,69,32,80,76,65,89,69,82,32,73,78,70,79,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x3C72 = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,80,105,110,103,58,32,32,99,97,108,99,117,108,97,116,105,110,103,46,46,46))
+local _0xDCF9 = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,78,97,109,101,58,32,32)..LP.Name)
+local _0xFB2D = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,239,184,143,32,32,68,105,115,112,108,97,121,58,32,32)..LP.DisplayName)
+local _0xDA1E = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,85,115,101,114,73,68,58,32,32)..LP.UserId)
+local _0x4A69 = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,83,101,114,118,101,114,32,80,108,97,121,101,114,115,58,32,32)..#_0xB903:GetPlayers())
+_0x37B0:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,83,69,82,86,69,82,32,73,78,70,79,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xF080 = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,239,184,143,32,32,74,111,98,73,68,58,32,32)..game.JobId:sub(1,20)..string.char(46,46,46))
+local _0xBD21 = _0x37B0:AddLabel(string.char(239,191,189,239,191,189,32,32,80,108,97,99,101,73,68,58,32,32)..game.PlaceId)
+task.spawn(function()
+while task.wait(2) do
+pcall(function()
+_0x4A69.Text =string.char(239,191,189,239,191,189,32,32,83,101,114,118,101,114,32,80,108,97,121,101,114,115,58,32,32)..#_0xB903:GetPlayers()
+local _0x3B3B=tick()
+game:GetService(string.char(82,117,110,83,101,114,118,105,99,101)).Heartbeat:Wait()
+_0x3C72.Text =string.char(239,191,189,239,191,189,32,32,80,105,110,103,58,32,32)..math.floor((tick()-_0x3B3B)*1000)..string.char(109,115)end)
+end
+end)
+_0x37B0:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,76,73,78,75,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x37B0:AddButton(string.char(239,191,189,239,191,189,32,32,67,111,112,121,32,68,105,115,99,111,114,100,32,76,105,110,107), function()
+setclipboard(string.char(104,111,108,105,99,104,121,108,50))
+_0xA10F(string.char(76,68,66,32,72,85,66),string.char(226,156,133,32,67,79,45,79,87,78,69,82,32,85,83,69,82,32,99,111,112,105,101,100,33),3)
+end)
+_0x37B0:AddButton(string.char(239,191,189,239,191,189,239,184,143,32,32,67,108,101,97,114,32,83,97,118,101,100,32,75,101,121), function()
+if writefile then writefile(string.char(76,68,66,95,72,85,66,47,107,101,121,46,116,120,116),"") end
+_0xA10F(string.char(76,68,66,32,72,85,66),string.char(239,191,189,239,191,189,239,184,143,32,75,101,121,32,99,108,101,97,114,101,100,32,226,128,148,32,114,101,106,111,105,110,32,116,111,32,114,101,45,101,110,116,101,114),4)
+end)local _0x16F6,_0x84FB = _0x164C:AddTab(string.char(226,154,161,32,32,79,112,32,77,97,105,110))
+local _0x5622 =string.char(84,101,108,101,112,111,114,116)local _0x6368 = {}
+_0x16F6:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,65,85,84,79,32,80,85,78,67,72,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,80,117,110,99,104), function(v)
+_G.scpAP=v
+if v then task.spawn(function() while _G.scpAP do
+local _0xF5D1=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104)) or (_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(80,117,110,99,104)))
+if _0xF5D1 then if _0xF5D1.Parent~=_0x5472.Character then _0xF5D1.Parent=_0x5472.Character end; _0xF5D1:Activate() end
+task.wait()
+end end) end
+end)
+_0x16F6:AddSwitch(string.char(226,154,161,32,32,70,97,115,116,32,80,117,110,99,104,32,40,48,32,99,111,111,108,100,111,119,110,41), function(v)
+local _0xF5D1=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104)) or (_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(80,117,110,99,104)))
+if _0xF5D1 then local _0xB831=_0xF5D1:FindFirstChild(string.char(97,116,116,97,99,107,84,105,109,101)); if _0xB831 then _0xB831.Value=v and 0 or 0.35 end end
+end)
+_0x16F6:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,65,85,84,79,32,75,73,78,71,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,75,105,110,103,32,40,76,111,99,107,32,97,116,32,116,104,114,111,110,101,41), function(v)
+local _0x20C3=CFrame.new(-8865,430,-5749)
+if v then
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0x5472.Character.HumanoidRootPart.CFrame=_0x20C3
+end
+getgenv().scpKL=_0x1659.Heartbeat:Connect(function()
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0x5472.Character.HumanoidRootPart.CFrame=_0x20C3
+end
+end)
+else
+if getgenv().scpKL then getgenv().scpKL:Disconnect(); getgenv().scpKL=nil end
+end
+end)
+_0x16F6:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,239,184,143,32,68,69,70,69,78,83,69,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,239,184,143,32,32,65,110,116,105,32,75,110,111,99,107,98,97,99,107), function(v)
+local _0xD9D4=_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if v and _0xD9D4 then
+local _0x444D=Instance.new(string.char(66,111,100,121,86,101,108,111,99,105,116,121),_0xD9D4)
+_0x444D.MaxForce=Vector3.new(1e5,0,1e5); _0x444D.Velocity=Vector3.zero; _0x444D.P=1250
+elseif not v and _0xD9D4 then
+local _0x444D=_0xD9D4:FindFirstChild(string.char(66,111,100,121,86,101,108,111,99,105,116,121)); if _0x444D then _0x444D:Destroy() end
+end
+end)
+_0x16F6:AddSwitch(string.char(226,153,190,239,184,143,32,32,73,110,102,105,110,105,116,101,32,74,117,109,112), function(v)
+getgenv().scpIJ=v
+if v then
+getgenv().scpIJC=game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101)).JumpRequest:Connect(function()
+if getgenv().scpIJ and _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then
+_0x5472.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+end
+end)
+elseif getgenv().scpIJC then getgenv().scpIJC:Disconnect() end
+end)
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,76,111,119,32,71,114,97,118,105,116,121), function(v) workspace.Gravity=v and 50 or 196.2 end)
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,78,111,99,108,105,112), function(v)
+getgenv().scpNC=v
+if v then
+getgenv().scpNCC=_0x1659.Stepped:Connect(function()
+if getgenv().scpNC and _0x5472.Character then
+for _0x84FB,_0xF5D1 in pairs(_0x5472.Character:GetDescendants()) do
+if _0xF5D1:IsA(string.char(66,97,115,101,80,97,114,116)) then _0xF5D1.CanCollide=false end
+end
+end
+end)
+elseif getgenv().scpNCC then getgenv().scpNCC:Disconnect() end
+end)
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,83,112,105,110,32,40,65,110,116,105,45,65,105,109,41), function(v)
+getgenv().scpSpin=v
+if v then task.spawn(function() while getgenv().scpSpin do
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0x5472.Character.HumanoidRootPart.CFrame=_0x5472.Character.HumanoidRootPart.CFrame*CFrame.Angles(0,math.rad(10),0)
+end; task.wait(0.05)
+end end) end
+end)
+_0x16F6:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,226,154,148,239,184,143,32,75,73,76,76,32,80,76,65,89,69,82,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x16F6:AddButton(string.char(239,191,189,239,191,189,32,32,84,111,103,103,108,101,32,75,105,108,108,32,77,101,116,104,111,100,32,40,110,111,119,58,32,84,101,108,101,112,111,114,116,41), function()
+_0x5622=_0x5622==string.char(84,101,108,101,112,111,114,116)andstring.char(78,111,110,101)orstring.char(84,101,108,101,112,111,114,116)_0xA10F(string.char(83,67,80,32,72,85,66),string.char(75,105,108,108,32,77,101,116,104,111,100,58,32)..killM,2)
+end)
+_0x16F6:AddTextBox(string.char(226,158,149,32,32,87,104,105,116,101,108,105,115,116,32,110,97,109,101,32,40,101,110,116,101,114,32,116,111,32,97,100,100,47,114,101,109,111,118,101,41), function(v)
+if table.find(_0x6368,v) then
+for i,_0xD859 in ipairs(_0x6368) do if _0xD859==v then table.remove(_0x6368,i); break end end
+_0xA10F(string.char(83,67,80),string.char(226,157,140,32,82,101,109,111,118,101,100,58,32)..v,2)
+else table.insert(_0x6368,v); _0xA10F(string.char(83,67,80),string.char(226,156,133,32,65,100,100,101,100,58,32)..v,2) end
+end,{clear=true})
+local function _0x13F4(target)
+if not target or target==_0x5472 then return end
+local _0xD9D4=target.Character and target.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+local _0x85D8=_0x0A4A(); if not _0xD9D4 then return end
+if _0x5622==string.char(84,101,108,101,112,111,114,116)and _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0xD9D4.CFrame=_0x5472.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,-3)
+end
+if _0x85D8 then _0x85D8:Activate() end
+local _0x2541=_0x5472.Character:FindFirstChild(string.char(82,105,103,104,116,72,97,110,100)); local _0xBD81=_0x5472.Character:FindFirstChild(string.char(76,101,102,116,72,97,110,100))
+if _0x2541 and _0xBD81 then
+pcall(firetouchinterest,_0x2541,_0xD9D4,1); pcall(firetouchinterest,_0xBD81,_0xD9D4,1)
+pcall(firetouchinterest,_0x2541,_0xD9D4,0); pcall(firetouchinterest,_0xBD81,_0xD9D4,0)
+end
+pcall(function() _0x5472.muscleEvent:FireServer(string.char(112,117,110,99,104),string.char(114,105,103,104,116,72,97,110,100)) end)
+pcall(function() _0x5472.muscleEvent:FireServer(string.char(112,117,110,99,104),string.char(108,101,102,116,72,97,110,100)) end)
+end
+_0x16F6:AddSwitch(string.char(226,152,160,239,184,143,32,32,75,105,108,108,32,65,108,108,32,80,108,97,121,101,114,115), function(v)
+getgenv().scpKA=v
+if v then task.spawn(function() while getgenv().scpKA do
+for _0x84FB,_0xF5D1 in ipairs(_0xB903:GetPlayers()) do
+if _0xF5D1~=_0x5472 and not table.find(_0x6368,_0xF5D1.Name) then pcall(_0x13F4,_0xF5D1) end
+end; task.wait(0.1)
+end end) end
+end)
+local _0x63EA=""_0x16F6:AddTextBox(string.char(239,191,189,239,191,189,32,32,75,105,108,108,32,115,112,101,99,105,102,105,99,32,226,128,148,32,112,108,97,121,101,114,32,110,97,109,101), function(v) _0x63EA=v end,{clear=false})
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,75,105,108,108,32,83,112,101,99,105,102,105,99,32,80,108,97,121,101,114), function(v)
+getgenv().scpKO=v
+if v then task.spawn(function() while getgenv().scpKO do
+local _0xF5D1=_0xF7E1(_0x63EA)
+if _0xF5D1 and _0xF5D1~=_0x5472 and not table.find(_0x6368,_0xF5D1.Name) then pcall(_0x13F4,_0xF5D1) end
+task.wait(0.1)
+end end) end
+end)
+local _0xC5CE=""_0x16F6:AddTextBox(string.char(239,191,189,239,191,189,32,32,83,112,121,32,99,97,109,101,114,97,32,226,128,148,32,112,108,97,121,101,114,32,110,97,109,101), function(v) _0xC5CE=v end,{clear=false})
+_0x16F6:AddSwitch(string.char(239,191,189,239,191,189,32,32,83,112,121,32,67,97,109,101,114,97), function(v)
+if v then
+getgenv().scpSC=true
+task.spawn(function() while getgenv().scpSC do
+local _0xF5D1=_0xF7E1(_0xC5CE)
+if _0xF5D1 and _0xF5D1.Character and _0xF5D1.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then
+workspace.CurrentCamera.CameraSubject=_0xF5D1.Character.Humanoid
+end; task.wait(0.25)
+end end)
+else
+getgenv().scpSC=false
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then
+workspace.CurrentCamera.CameraSubject=_0x5472.Character.Humanoid
+end
+end
+end)local _0x1D31,_0x84FB = _0x164C:AddTab(string.char(239,191,189,239,191,189,32,32,70,97,114,109))
+_0x1D31:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,226,154,161,32,65,85,84,79,32,76,73,70,84,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x1D31:AddSwitch(string.char(226,154,161,32,32,65,117,116,111,32,76,105,102,116,32,40,70,105,114,101,83,101,114,118,101,114,32,114,101,112,41), function(v)
+getgenv().scpAL=v
+if v then task.spawn(function() while getgenv().scpAL do
+pcall(function()
+local _0xC082=_0x5472.Backpack:FindFirstChild(string.char(80,117,115,104,117,112)) or _0x5472.Backpack:FindFirstChild(string.char(80,117,115,104,117,112,115))
+if _0xC082 and _0x5472.Character then _0xC082.Parent=_0x5472.Character end
+_0x5472.muscleEvent:FireServer(string.char(114,101,112))
+end); task.wait(0.1)
+end end) end
+end)
+_0x1D31:AddSwitch(string.char(226,154,150,239,184,143,32,32,65,117,116,111,32,87,101,105,103,104,116,32,82,101,112), function(v)
+getgenv().scpWR=v
+if v then task.spawn(function() while getgenv().scpWR do
+pcall(function()
+local _0xAD08=_0x5472.Backpack:FindFirstChild(string.char(87,101,105,103,104,116))
+if _0xAD08 and _0x5472.Character then _0x5472.Character.Humanoid:EquipTool(_0xAD08) end
+_0x5472.muscleEvent:FireServer(string.char(114,101,112))
+end); task.wait(0.01)
+end end) end
+end)
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,239,184,143,32,32,65,117,116,111,32,66,101,110,99,104,32,80,114,101,115,115), function(v)
+getgenv().scpBP=v
+if v then task.spawn(function() while getgenv().scpBP do
+pcall(function() _0x5472.muscleEvent:FireServer(string.char(114,101,112),string.char(98,101,110,99,104)) end); task.wait(0.05)
+end end) end
+end)
+_0x1D31:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,65,85,84,79,32,69,81,85,73,80,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+for _0x84FB,tn in ipairs({string.char(87,101,105,103,104,116),string.char(80,117,115,104,117,112,115),string.char(83,105,116,117,112,115),string.char(72,97,110,100,115,116,97,110,100),string.char(68,117,109,98,98,101,108,108)}) do
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,69,113,117,105,112,32)..tn, function(v)
+getgenv()[string.char(115,99,112,69,81)..tn]=v
+if v then task.spawn(function() while getgenv()[string.char(115,99,112,69,81)..tn] do
+local _0xAD08=_0x5472.Backpack:FindFirstChild(tn)
+if _0xAD08 and _0x5472.Character then _0xAD08.Parent=_0x5472.Character end
+task.wait(0.1)
+end end) end
+end)
+end
+_0x1D31:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,74,85,78,71,76,69,32,77,65,67,72,73,78,69,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xA1B2={
+{string.char(239,191,189,239,191,189,32,32,74,117,110,103,108,101,32,66,101,110,99,104),string.char(74,117,110,103,108,101,32,66,101,110,99,104), CFrame.new(-8629.88,64.88,1855.03)},
+{string.char(239,191,189,239,191,189,239,184,143,32,32,66,97,114,32,76,105,102,116),string.char(74,117,110,103,108,101,32,66,97,114,32,76,105,102,116), CFrame.new(-8678.06,14.50,2089.26)},
+{string.char(239,191,189,239,191,189,32,32,83,113,117,97,116),string.char(74,117,110,103,108,101,32,83,113,117,97,116), CFrame.new(-8374.26,34.59,2932.45)},
+}
+for _0x84FB,m in ipairs(_0xA1B2) do
+local _0x8539=string.char(115,99,112,74,77)..m[2]:gsub(string.char(32),"")
+_0x1D31:AddSwitch(m[1], function(v)
+getgenv()[_0x8539]=v
+if v then task.spawn(function() while getgenv()[_0x8539] do
+pcall(function()
+if _0x5472.Character then
+_0x5472.Character:SetPrimaryPartCFrame(m[3])
+_0xA3D1.rEvents.machineInteractRemote:InvokeServer(string.char(117,115,101,77,97,99,104,105,110,101),workspace.machinesFolder[m[2]].interactSeat)
+end
+end); task.wait(0.1)
+end end) end
+end)
+end
+_0x1D31:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,65,85,84,79,32,82,69,66,73,82,84,72,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x0F18=nil
+_0x1D31:AddTextBox(string.char(84,97,114,103,101,116,32,114,101,98,105,114,116,104,115,32,40,98,108,97,110,107,32,61,32,105,110,102,105,110,105,116,101,41), function(v) _0x0F18=tonumber(v) end,{clear=false})
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,82,101,98,105,114,116,104), function(v)
+getgenv().scpAReb=v
+if v then task.spawn(function() while getgenv().scpAReb do
+local _0xD3C1=_0x5472:FindFirstChild(string.char(108,101,97,100,101,114,115,116,97,116,115)) and _0x5472.leaderstats:FindFirstChild(string.char(82,101,98,105,114,116,104,115))
+if _0xD3C1 and _0x0F18 and _0xD3C1.Value>=_0x0F18 then
+getgenv().scpAReb=false; _0xA10F(string.char(83,67,80),string.char(226,156,133,32,82,101,98,105,114,116,104,32,103,111,97,108,32,114,101,97,99,104,101,100,33),4); break
+end
+pcall(function() _0xA3D1.rEvents.rebirthRemote:InvokeServer(string.char(114,101,98,105,114,116,104,82,101,113,117,101,115,116)) end)
+task.wait(0.15)
+end end) end
+end)
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,83,105,122,101,32,50), function(v)
+getgenv().scpAS2=v
+if v then task.spawn(function() while getgenv().scpAS2 do
+pcall(function() _0xA3D1.rEvents.changeSpeedSizeRemote:InvokeServer(string.char(99,104,97,110,103,101,83,105,122,101),2) end)
+task.wait(0)
+end end) end
+end)
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,76,111,99,107,32,80,111,115,105,116,105,111,110), function(v)
+if v then
+local _0xD9D4=_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0xD9D4 then
+local _0xF8C3=_0xD9D4.CFrame
+getgenv().scpPL=_0x1659.Heartbeat:Connect(function()
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0x5472.Character.HumanoidRootPart.CFrame=_0xF8C3
+end
+end)
+end
+else
+if getgenv().scpPL then getgenv().scpPL:Disconnect(); getgenv().scpPL=nil end
+end
+end)
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,72,105,100,101,32,70,114,97,109,101,115,32,40,70,80,83,32,66,111,111,115,116,41), function(v)
+for _0x84FB,_0x1273 in pairs(_0xA3D1:GetChildren()) do
+if _0x1273.Name:match(string.char(70,114,97,109,101,36)) then _0x1273.Visible=not v end
+end
+end)
+_0x1D31:AddSwitch(string.char(239,191,189,239,191,189,32,32,70,114,101,101,32,65,117,116,111,76,105,102,116,32,71,97,109,101,112,97,115,115), function(v)
+if v then pcall(function()
+for _0x84FB,gp in pairs(_0xA3D1.gamepassIds:GetChildren()) do
+local _0x4F87=Instance.new(string.char(73,110,116,86,97,108,117,101)); _0x4F87.Name=gp.Name; _0x4F87.Value=gp.Value; _0x4F87.Parent=_0x5472.ownedGamepasses
+end
+end); _0xA10F(string.char(76,68,66),string.char(239,191,189,239,191,189,32,71,97,109,101,112,97,115,115,32,117,110,108,111,99,107,101,100,33),3) end
+end)local _0xFF99,_0x84FB = _0x164C:AddTab(string.char(226,154,161,32,32,70,97,115,116,32,70,97,114,109))
+_0xFF99:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,82,79,67,75,32,83,69,84,85,80,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0xFF99:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,80,117,110,99,104), function(v)
+_G.scpAP2=v
+if v then task.spawn(function() while _G.scpAP2 do
+local _0xF5D1=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104)) or (_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(80,117,110,99,104)))
+if _0xF5D1 then if _0xF5D1.Parent~=_0x5472.Character then _0xF5D1.Parent=_0x5472.Character end; _0xF5D1:Activate() end
+task.wait()
+end end) end
+end)
+_0xFF99:AddSwitch(string.char(226,154,161,32,32,70,97,115,116,32,80,117,110,99,104,32,40,48,32,99,111,111,108,100,111,119,110,41), function(v)
+local _0xF5D1=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104)) or (_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(80,117,110,99,104)))
+if _0xF5D1 then local _0xB831=_0xF5D1:FindFirstChild(string.char(97,116,116,97,99,107,84,105,109,101)); if _0xB831 then _0xB831.Value=v and 0 or 0.3 end end
+end)
+_0xFF99:AddSwitch(string.char(239,191,189,239,191,189,32,32,76,111,99,107,32,80,111,115,105,116,105,111,110), function(v)
+if v then
+local _0xD9D4=_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0xD9D4 then
+local _0xF8C3=_0xD9D4.CFrame
+getgenv().scpPL2=_0x1659.Heartbeat:Connect(function()
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+_0x5472.Character.HumanoidRootPart.CFrame=_0xF8C3
+end
+end)
+end
+else
+if getgenv().scpPL2 then getgenv().scpPL2:Disconnect(); getgenv().scpPL2=nil end
+end
+end)
+_0xFF99:AddSwitch(string.char(239,191,189,239,191,189,32,32,72,105,100,101,32,70,114,97,109,101,115), function(v)
+for _0x84FB,_0x1273 in pairs(_0xA3D1:GetChildren()) do if _0x1273.Name:match(string.char(70,114,97,109,101,36)) then _0x1273.Visible=not v end end
+end)
+_0xFF99:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,83,69,76,69,67,84,32,82,79,67,75,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xADE1={
+{string.char(239,191,189,239,191,189,32,32,74,117,110,103,108,101,32,82,111,99,107),10000000},{string.char(239,191,189,239,191,189,32,32,77,117,115,99,108,101,32,75,105,110,103),5000000},{string.char(226,154,161,32,32,76,101,103,110,100,115),1000000},
+{string.char(239,191,189,239,191,189,32,32,76,97,114,103,101,32,82,111,99,107),1000000},{string.char(239,191,189,239,191,189,32,32,73,110,102,101,114,110,111),750000},{string.char(239,191,189,239,191,189,32,32,77,121,115,116,105,99),400000},
+{string.char(226,157,132,239,184,143,32,32,70,114,111,122,101),150000},{string.char(239,191,189,239,191,189,32,32,71,111,108,100,101,110),5000},{string.char(239,191,189,239,191,189,32,32,80,117,110,99,104,32,82,111,99,107),10},{string.char(239,191,189,239,191,189,32,32,84,105,110,121,32,82,111,99,107),0},
+}
+for _0x84FB,rd in ipairs(_0xADE1) do
+local _0xDA17,_0x01DD=rd[1],rd[2]
+_0xFF99:AddSwitch(_0xDA17..string.char(32,40)..fmt(_0x01DD)..string.char(41), function(v)
+_G.scpRock=v
+if v then
+_0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,32,70,97,114,109,105,110,103,58,32)..rN,2)
+task.spawn(function() while _G.scpRock do
+pcall(function()
+if not _0x5472.Character then return end
+local _0x85D8=_0x5472.Backpack:FindFirstChild(string.char(80,117,110,99,104))
+if _0x85D8 then _0x85D8.Parent=_0x5472.Character end
+local _0x6D46=workspace:FindFirstChild(string.char(109,97,99,104,105,110,101,115,70,111,108,100,101,114))
+if _0x6D46 then for _0x84FB,obj in pairs(_0x6D46:GetDescendants()) do
+if obj.Name==string.char(110,101,101,100,101,100,68,117,114,97,98,105,108,105,116,121)and obj.Value==_0x01DD then
+local _0x0DE5=obj.Parent:FindFirstChild(string.char(82,111,99,107))
+if _0x0DE5 then
+local _0x2541=_0x5472.Character:FindFirstChild(string.char(82,105,103,104,116,72,97,110,100))
+local _0xBD81=_0x5472.Character:FindFirstChild(string.char(76,101,102,116,72,97,110,100))
+if _0x2541 then pcall(firetouchinterest,_0x2541,_0x0DE5,0); pcall(firetouchinterest,_0x2541,_0x0DE5,1) end
+if _0xBD81 then pcall(firetouchinterest,_0xBD81,_0x0DE5,0); pcall(firetouchinterest,_0xBD81,_0x0DE5,1) end
+end
+end
+end end
+_0x5472.muscleEvent:FireServer(string.char(112,117,110,99,104),string.char(114,105,103,104,116,72,97,110,100))
+_0x5472.muscleEvent:FireServer(string.char(112,117,110,99,104),string.char(108,101,102,116,72,97,110,100))
+local _0xC082=_0x5472.Character:FindFirstChild(string.char(80,117,110,99,104)); if _0xC082 then _0xC082:Activate() end
+end); task.wait(0.05)
+end end)
+end
+end)
+endlocal _0x1ABD,_0x84FB = _0x164C:AddTab(string.char(239,191,189,239,191,189,32,32,71,105,102,116,115))
+_0x1ABD:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,73,78,86,69,78,84,79,82,89,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x13EF=_0x1ABD:AddLabel(string.char(239,191,189,239,191,189,32,32,69,103,103,115,58,32,48))
+local _0x32EF=_0x1ABD:AddLabel(string.char(239,191,189,239,191,189,32,32,83,104,97,107,101,115,58,32,48))
+local function _0xA8F3()
+local _0xC634=_0x5472:FindFirstChild(string.char(99,111,110,115,117,109,97,98,108,101,115,70,111,108,100,101,114)); local _0xB682,_0x3B3B=0,0
+if _0xC634 then for _0x84FB,i in ipairs(_0xC634:GetChildren()) do
+if i.Name==string.char(80,114,111,116,101,105,110,32,69,103,103)then _0xB682=_0xB682+1
+elseif i.Name==string.char(84,114,111,112,105,99,97,108,32,83,104,97,107,101)then _0x3B3B=_0x3B3B+1 end
+end end
+_0x13EF.Text=string.char(239,191,189,239,191,189,32,32,69,103,103,115,58,32)..e; _0x32EF.Text=string.char(239,191,189,239,191,189,32,32,83,104,97,107,101,115,58,32)..s
+end
+task.spawn(function() while task.wait(5) do _0xA8F3() end end); _0xA8F3()
+_0x1ABD:AddButton(string.char(239,191,189,239,191,189,32,32,82,101,102,114,101,115,104,32,73,110,118,101,110,116,111,114,121), function() _0xA8F3() end)
+_0x1ABD:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,69,71,71,32,71,73,70,84,69,82,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x92E8,_0xB82B=nil,1
+_0x1ABD:AddTextBox(string.char(84,97,114,103,101,116,32,112,108,97,121,101,114,32,110,97,109,101), function(v)
+local _0xF5D1=_0xB903:FindFirstChild(v) or _0xF7E1(v)
+if _0xF5D1 then _0x92E8=_0xF5D1; _0xA10F(string.char(83,67,80),string.char(84,97,114,103,101,116,58,32)..p.Name,2)
+else _0xA10F(string.char(83,67,80),string.char(226,157,140,32,80,108,97,121,101,114,32,110,111,116,32,102,111,117,110,100),2) end
+end,{clear=false})
+_0x1ABD:AddTextBox(string.char(65,109,111,117,110,116,32,111,102,32,101,103,103,115), function(v) _0xB82B=tonumber(v) or 1 end,{clear=false})
+_0x1ABD:AddButton(string.char(239,191,189,239,191,189,32,32,71,105,102,116,32,69,103,103,115,32,78,111,119), function()
+if not _0x92E8 then _0xA10F(string.char(83,67,80),string.char(226,157,140,32,83,101,116,32,116,97,114,103,101,116,32,102,105,114,115,116,33),3); return end
+task.spawn(function()
+local _0xD859=0; local _0xC634=_0x5472:FindFirstChild(string.char(99,111,110,115,117,109,97,98,108,101,115,70,111,108,100,101,114))
+if _0xC634 then for i=1,_0xB82B do
+local _0x8E97=_0xC634:FindFirstChild(string.char(80,114,111,116,101,105,110,32,69,103,103))
+if _0x8E97 then pcall(function() _0xA3D1.rEvents.giftRemote:InvokeServer(_0x92E8,_0x8E97) end); _0xD859=_0xD859+1 end
+task.wait(0.5)
+end end
+_0xA10F(string.char(83,67,80),string.char(226,156,133,32,71,105,102,116,101,100,32)..n..string.char(32,101,103,103,115,32,226,134,146,32)..eTarget.Name,4); _0xA8F3()
+end)
+end)
+_0x1ABD:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,83,72,65,75,69,32,71,73,70,84,69,82,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x3E8A,_0xBFE5=nil,1
+_0x1ABD:AddTextBox(string.char(84,97,114,103,101,116,32,112,108,97,121,101,114,32,110,97,109,101), function(v)
+local _0xF5D1=_0xB903:FindFirstChild(v) or _0xF7E1(v)
+if _0xF5D1 then _0x3E8A=_0xF5D1; _0xA10F(string.char(83,67,80),string.char(84,97,114,103,101,116,58,32)..p.Name,2)
+else _0xA10F(string.char(83,67,80),string.char(226,157,140,32,80,108,97,121,101,114,32,110,111,116,32,102,111,117,110,100),2) end
+end,{clear=false})
+_0x1ABD:AddTextBox(string.char(65,109,111,117,110,116,32,111,102,32,115,104,97,107,101,115), function(v) _0xBFE5=tonumber(v) or 1 end,{clear=false})
+_0x1ABD:AddButton(string.char(239,191,189,239,191,189,32,32,71,105,102,116,32,83,104,97,107,101,115,32,78,111,119), function()
+if not _0x3E8A then _0xA10F(string.char(83,67,80),string.char(226,157,140,32,83,101,116,32,116,97,114,103,101,116,32,102,105,114,115,116,33),3); return end
+task.spawn(function()
+local _0xD859=0; local _0xC634=_0x5472:FindFirstChild(string.char(99,111,110,115,117,109,97,98,108,101,115,70,111,108,100,101,114))
+if _0xC634 then for i=1,_0xBFE5 do
+local _0x4537=_0xC634:FindFirstChild(string.char(84,114,111,112,105,99,97,108,32,83,104,97,107,101))
+if _0x4537 then pcall(function() _0xA3D1.rEvents.giftRemote:InvokeServer(_0x3E8A,_0x4537) end); _0xD859=_0xD859+1 end
+task.wait(0.5)
+end end
+_0xA10F(string.char(83,67,80),string.char(226,156,133,32,71,105,102,116,101,100,32)..n..string.char(32,115,104,97,107,101,115,32,226,134,146,32)..sTarget.Name,4); _0xA8F3()
+end)
+end)local _0x028F,_0x84FB = _0x164C:AddTab(string.char(226,154,153,239,184,143,32,32,77,105,115,99))
+_0x028F:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,239,184,143,32,80,69,82,70,79,82,77,65,78,67,69,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+_0x028F:AddSwitch(string.char(239,191,189,239,191,189,239,184,143,32,32,76,111,119,32,71,114,97,112,104,105,99,115,32,40,70,80,83,32,66,111,111,115,116,41), function(v)
+game.Lighting.GlobalShadows=not v; game.Lighting.FogEnd=v and 9e9 or 1e5
+game.Lighting.Brightness=v and 0 or 2; settings().Rendering.QualityLevel=v andstring.char(76,101,118,101,108,48,49)orstring.char(76,101,118,101,108,50,49)if v then for _0x84FB,_0x1273 in pairs(game:GetDescendants()) do
+pcall(function() if _0x1273:IsA(string.char(80,97,114,116,105,99,108,101,69,109,105,116,116,101,114)) or _0x1273:IsA(string.char(84,114,97,105,108)) then _0x1273.Lifetime=NumberRange.new(0) end end)
+end end
+end)
+_0x028F:AddSwitch(string.char(239,191,189,239,191,189,32,32,70,117,108,108,98,114,105,103,104,116), function(v)
+game.Lighting.Brightness=v and 10 or 2; game.Lighting.GlobalShadows=not v
+game.Lighting.ClockTime=v and 14 or 6
+end)
+_0x028F:AddSwitch(string.char(239,191,189,239,191,189,32,32,87,97,108,107,32,111,110,32,87,97,116,101,114), function(v)
+if v then
+local _0x1308=2048; local _0xA040=math.ceil(50000/_0x1308)
+for x=-_0xA040,_0xA040 do for z=-_0xA040,_0xA040 do
+local _0xF5D1=Instance.new(string.char(80,97,114,116)); _0xF5D1.Size=Vector3.new(_0x1308,1,_0x1308)
+_0xF5D1.Position=Vector3.new(x*_0x1308,-9.5,z*_0x1308); _0xF5D1.Anchored=true
+_0xF5D1.Transparency=1; _0xF5D1.CanCollide=true; _0xF5D1.Name=string.char(83,67,80,87,97,116,101,114); _0xF5D1.Parent=workspace
+end end
+else
+for _0x84FB,_0xF5D1 in pairs(workspace:GetChildren()) do if _0xF5D1.Name==string.char(83,67,80,87,97,116,101,114)then _0xF5D1:Destroy() end end
+end
+end)
+_0x028F:AddButton(string.char(239,191,189,239,191,189,32,32,82,101,109,111,118,101,32,65,100,32,80,111,114,116,97,108,115), function()
+local _0xEC5C=0
+for _0x84FB,v in pairs(game:GetDescendants()) do if v.Name==string.char(82,111,98,108,111,120,70,111,114,119,97,114,100,80,111,114,116,97,108,115)then v:Destroy(); _0xEC5C=_0xEC5C+1 end end
+if _G.scpAdC then _G.scpAdC:Disconnect() end
+_G.scpAdC=game.DescendantAdded:Connect(function(v) if v.Name==string.char(82,111,98,108,111,120,70,111,114,119,97,114,100,80,111,114,116,97,108,115)then v:Destroy() end end)
+_0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,32,82,101,109,111,118,101,100,32)..c..string.char(32,112,111,114,116,97,108,115),3)
+end)
+_0x028F:AddButton(string.char(239,191,189,239,191,189,239,184,143,32,32,65,110,116,105,32,65,70,75), function()
+pcall(function() loadstring(game:HttpGet(string.char(104,116,116,112,115,58,47,47,114,97,119,46,103,105,116,104,117,98,117,115,101,114,99,111,110,116,101,110,116,46,99,111,109,47,104,97,115,115,97,110,120,122,97,121,110,45,108,117,97,47,65,110,116,105,45,97,102,107,47,109,97,105,110,47,97,110,116,105,97,102,107,98,121,104,97,115,115,97,110,120,122,121,110)))() end)
+_0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,239,184,143,32,65,110,116,105,32,65,70,75,32,79,78),3)
+end)
+_0x028F:AddSwitch(string.char(226,154,161,32,32,83,112,101,101,100,32,72,97,99,107,32,40,49,48,48,41), function(v)
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then _0x5472.Character.Humanoid.WalkSpeed=v and 100 or 16 end
+end)
+_0x028F:AddSwitch(string.char(239,191,189,239,191,189,32,32,85,108,116,114,97,32,83,112,101,101,100,32,40,50,53,48,41), function(v)
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then _0x5472.Character.Humanoid.WalkSpeed=v and 250 or 16 end
+end)
+_0x028F:AddSwitch(string.char(239,191,189,239,191,189,32,32,72,105,103,104,32,74,117,109,112), function(v)
+if _0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100)) then _0x5472.Character.Humanoid.JumpPower=v and 100 or 50 end
+end)
+_0x028F:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,84,69,76,69,80,79,82,84,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x31A8={
+{string.char(239,191,189,239,191,189,239,184,143,32,32,66,101,97,99,104),Vector3.new(0,0,0)},{string.char(226,157,132,239,184,143,32,32,70,114,111,115,116,32,71,121,109),Vector3.new(-2650,7,-393)},
+{string.char(239,191,189,239,191,189,32,32,77,121,116,104,105,99,97,108,32,71,121,109),Vector3.new(2255,7,1071)},{string.char(226,153,190,239,184,143,32,32,69,116,101,114,110,97,108,32,71,121,109),Vector3.new(-6768,7,-1287)},
+{string.char(226,154,161,32,32,76,101,103,101,110,100,32,71,121,109),Vector3.new(4429,991,-3880)},{string.char(239,191,189,239,191,189,32,32,77,117,115,99,108,101,32,75,105,110,103),Vector3.new(-8799,17,-5798)},
+{string.char(239,191,189,239,191,189,32,32,74,117,110,103,108,101,32,71,121,109),Vector3.new(-7894,6,2386)},{string.char(239,191,189,239,191,189,32,32,76,97,118,97,32,66,114,97,119,108),Vector3.new(4471,119,-8836)},
+{string.char(239,191,189,239,191,189,239,184,143,32,32,68,101,115,101,114,116,32,66,114,97,119,108),Vector3.new(960,17,-7398)},{string.char(239,191,189,239,191,189,239,184,143,32,32,84,105,110,121,32,71,121,109),Vector3.new(50,7,1918)},
+}
+for _0x84FB,loc in ipairs(_0x31A8) do
+_0x028F:AddButton(loc[1], function()
+local _0xD9D4=_0x5472.Character and _0x5472.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))
+if _0xD9D4 then _0xD9D4.CFrame=CFrame.new(loc[2]); _0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,32)..loc[1],2) end
+end)
+endlocal _0x5076,_0x84FB = _0x164C:AddTab(string.char(239,191,189,239,191,189,32,32,66,117,121,32,80,101,116,115))
+_0x5076:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,66,85,89,32,80,69,84,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xD43C={string.char(78,101,111,110,32,71,117,97,114,100,105,97,110),string.char(83,104,97,100,111,119,32,84,105,116,97,110),string.char(67,114,121,115,116,97,108,32,68,114,97,107,101),string.char(71,111,108,100,101,110,32,80,104,111,101,110,105,120),string.char(83,116,111,114,109,32,87,111,108,102),string.char(86,111,105,100,32,83,101,114,112,101,110,116),string.char(70,114,111,115,116,32,66,101,97,114),string.char(76,97,118,97,32,71,111,108,101,109),string.char(84,104,117,110,100,101,114,32,69,97,103,108,101),string.char(77,121,115,116,105,99,32,70,111,120),string.char(73,114,111,110,32,71,111,114,105,108,108,97),string.char(80,108,97,115,109,97,32,83,104,97,114,107),string.char(67,101,108,101,115,116,105,97,108,32,76,105,111,110),string.char(68,111,111,109,32,82,101,97,112,101,114),string.char(69,109,101,114,97,108,100,32,68,114,97,103,111,110),
+}
+local _0x33FE=_0xD43C[1]
+local _0x9D33,_0x84FB=_0x5076:AddDropdown(string.char(239,191,189,239,191,189,32,32,83,101,108,101,99,116,32,80,101,116), function(v) _0x33FE=v end)
+for _0x84FB,pn in ipairs(_0xD43C) do _0x9D33:Add(pn) end
+_0x5076:AddTextBox(string.char(79,114,32,116,121,112,101,32,112,101,116,32,110,97,109,101,32,109,97,110,117,97,108,108,121), function(v) _0x33FE=v end,{clear=false})
+_0x5076:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,66,117,121,32,80,101,116), function(v)
+getgenv().scpPet=v
+if v then task.spawn(function() while getgenv().scpPet do
+pcall(function()
+local _0x1273=_0xA3D1.cPetShopFolder:FindFirstChild(_0x33FE)
+if _0x1273 then _0xA3D1.cPetShopRemote:InvokeServer(_0x1273) end
+end); task.wait(1)
+end end) end
+end)
+_0x5076:AddButton(string.char(239,191,189,239,191,189,32,32,66,117,121,32,79,110,99,101), function()
+pcall(function()
+local _0x1273=_0xA3D1.cPetShopFolder:FindFirstChild(_0x33FE)
+if _0x1273 then _0xA3D1.cPetShopRemote:InvokeServer(_0x1273); _0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,32,66,111,117,103,104,116,58,32)..selPet,3) end
+end)
+end)
+_0x5076:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,66,85,89,32,65,85,82,65,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x9634={string.char(66,108,117,101,32,65,117,114,97),string.char(82,101,100,32,65,117,114,97),string.char(71,111,108,100,32,65,117,114,97),string.char(83,104,97,100,111,119,32,65,117,114,97),string.char(78,101,111,110,32,65,117,114,97),string.char(67,114,121,115,116,97,108,32,65,117,114,97),string.char(83,116,111,114,109,32,65,117,114,97),string.char(70,114,111,115,116,32,65,117,114,97),string.char(70,108,97,109,101,32,65,117,114,97),string.char(86,111,105,100,32,65,117,114,97),
+}
+local _0xFDC1=_0x9634[1]
+local _0xF470,_0x84FB=_0x5076:AddDropdown(string.char(239,191,189,239,191,189,32,32,83,101,108,101,99,116,32,65,117,114,97), function(v) _0xFDC1=v end)
+for _0x84FB,an in ipairs(_0x9634) do _0xF470:Add(an) end
+_0x5076:AddTextBox(string.char(79,114,32,116,121,112,101,32,97,117,114,97,32,110,97,109,101,32,109,97,110,117,97,108,108,121), function(v) _0xFDC1=v end,{clear=false})
+_0x5076:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,66,117,121,32,65,117,114,97), function(v)
+getgenv().scpAura=v
+if v then task.spawn(function() while getgenv().scpAura do
+pcall(function()
+local _0x1273=_0xA3D1.cPetShopFolder:FindFirstChild(_0xFDC1)
+if _0x1273 then _0xA3D1.cPetShopRemote:InvokeServer(_0x1273) end
+end); task.wait(1)
+end end) end
+end)
+_0x5076:AddButton(string.char(239,191,189,239,191,189,32,32,66,117,121,32,65,117,114,97,32,79,110,99,101), function()
+pcall(function()
+local _0x1273=_0xA3D1.cPetShopFolder:FindFirstChild(_0xFDC1)
+if _0x1273 then _0xA3D1.cPetShopRemote:InvokeServer(_0x1273); _0xA10F(string.char(83,67,80),string.char(239,191,189,239,191,189,32,66,111,117,103,104,116,58,32)..selAura,3) end
+end)
+end)
+_0x5076:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,226,154,161,32,85,76,84,73,77,65,84,69,83,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xA8FE={string.char(85,108,116,105,109,97,116,101,32,49),string.char(85,108,116,105,109,97,116,101,32,50),string.char(85,108,116,105,109,97,116,101,32,51),string.char(85,108,116,105,109,97,116,101,32,52),string.char(85,108,116,105,109,97,116,101,32,53),
+}
+local _0xACC6=_0xA8FE[1]
+local _0x609B,_0x84FB=_0x5076:AddDropdown(string.char(226,154,161,32,32,83,101,108,101,99,116,32,85,108,116,105,109,97,116,101), function(v) _0xACC6=v end)
+for _0x84FB,un in ipairs(_0xA8FE) do _0x609B:Add(un) end
+_0x5076:AddTextBox(string.char(79,114,32,116,121,112,101,32,117,108,116,105,109,97,116,101,32,110,97,109,101,32,109,97,110,117,97,108,108,121), function(v) _0xACC6=v end,{clear=false})
+_0x5076:AddSwitch(string.char(226,154,161,32,32,65,117,116,111,32,66,117,121,32,85,108,116,105,109,97,116,101), function(v)
+getgenv().scpUlt=v
+if v then task.spawn(function() while getgenv().scpUlt do
+pcall(function()
+local _0x1273=_0xA3D1.ultimatesFolder and _0xA3D1.ultimatesFolder:FindFirstChild(_0xACC6)
+if _0x1273 then _0xA3D1.rEvents.buyUltimateRemote:InvokeServer(_0x1273) end
+end); task.wait(1)
+end end) end
+end)
+_0x5076:AddSwitch(string.char(239,191,189,239,191,189,32,32,65,117,116,111,32,83,112,105,110,32,70,111,114,116,117,110,101,32,87,104,101,101,108), function(v)
+getgenv().scpWheel=v
+if v then task.spawn(function() while getgenv().scpWheel do
+pcall(function()
+_0xA3D1.rEvents.openFortuneWheelRemote:InvokeServer(string.char(111,112,101,110,70,111,114,116,117,110,101,87,104,101,101,108),_0xA3D1.fortuneWheelChances[string.char(70,111,114,116,117,110,101,32,87,104,101,101,108)])
+end); task.wait(1)
+end end) end
+end)local _0x86AE,_0x84FB = _0x164C:AddTab(string.char(239,191,189,239,191,189,32,32,83,116,97,116,115))
+_0x86AE:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,226,143,177,239,184,143,32,83,69,83,83,73,79,78,32,84,73,77,69,82,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x9DB8=os.time()
+local _0xCD34=_0x86AE:AddLabel(string.char(226,143,177,239,184,143,32,32,48,100,32,48,104,32,48,109,32,48,115))
+task.spawn(function() while task.wait(1) do
+local _0xB682=os.time()-_0x9DB8
+_0xCD34.Text=string.char(226,143,177,239,184,143,32,32)..math.floor(_0xB682/86400)..string.char(100,32)..math.floor(_0xB682%86400/3600)..string.char(104,32)..math.floor(_0xB682%3600/60)..string.char(109,32)..(_0xB682%60)..string.char(115)end end)
+_0x86AE:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,83,84,65,84,83,32,71,65,73,78,69,68,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x9CCF=_0x5472:WaitForChild(string.char(108,101,97,100,101,114,115,116,97,116,115),10)
+local _0x3974=_0x9CCF and _0x9CCF:FindFirstChild(string.char(83,116,114,101,110,103,116,104))
+local _0x9555=_0x9CCF and _0x9CCF:FindFirstChild(string.char(82,101,98,105,114,116,104,115))
+local _0x9AE2=_0x9CCF and _0x9CCF:FindFirstChild(string.char(75,105,108,108,115))
+local _0xC8C5=_0x5472:FindFirstChild(string.char(68,117,114,97,98,105,108,105,116,121))
+local _0x2FC0=_0x5472:FindFirstChild(string.char(101,118,105,108,75,97,114,109,97))
+local _0x8A81=_0x5472:FindFirstChild(string.char(103,111,111,100,75,97,114,109,97))
+local _0xE72E=_0x3974 and _0x3974.Value or 0; local _0xBD06=_0xC8C5 and _0xC8C5.Value or 0
+local _0xFEBC=_0x9555 and _0x9555.Value or 0; local _0x97FB=_0x9AE2 and _0x9AE2.Value or 0
+local _0x0914=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,83,116,114,101,110,103,116,104,58,32,32,32,32,226,128,148))
+local _0xEC87=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,239,184,143,32,32,68,117,114,97,98,105,108,105,116,121,58,32,32,226,128,148))
+local _0xEC66=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,82,101,98,105,114,116,104,115,58,32,32,32,32,226,128,148))
+local _0xA6A3=_0x86AE:AddLabel(string.char(226,154,148,239,184,143,32,32,75,105,108,108,115,58,32,32,32,32,32,32,32,226,128,148))
+local _0xDE71=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,69,118,105,108,32,75,97,114,109,97,58,32,32,226,128,148))
+local _0x6291=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,71,111,111,100,32,75,97,114,109,97,58,32,32,226,128,148))
+task.spawn(function() while task.wait(0.5) do pcall(function()
+if _0x3974 then _0x0914.Text=string.char(239,191,189,239,191,189,32,32,83,116,114,101,110,103,116,104,58,32,32,32,32)..fmt(_0x3974.Value)..string.char(32,32,40,43)..fmt(_0x3974.Value-_0xE72E)..string.char(41)end
+if _0xC8C5 then _0xEC87.Text=string.char(239,191,189,239,191,189,239,184,143,32,32,68,117,114,97,98,105,108,105,116,121,58,32,32)..fmt(_0xC8C5.Value)..string.char(32,32,40,43)..fmt(_0xC8C5.Value-_0xBD06)..string.char(41)end
+if _0x9555 then _0xEC66.Text=string.char(239,191,189,239,191,189,32,32,82,101,98,105,114,116,104,115,58,32,32,32,32)..fmt(_0x9555.Value)..string.char(32,32,40,43)..fmt(_0x9555.Value-_0xFEBC)..string.char(41)end
+if _0x9AE2 then _0xA6A3.Text=string.char(226,154,148,239,184,143,32,32,75,105,108,108,115,58,32,32,32,32,32,32,32)..fmt(_0x9AE2.Value)..string.char(32,32,40,43)..fmt(_0x9AE2.Value-_0x97FB)..string.char(41)end
+if _0x2FC0 then _0xDE71.Text=string.char(239,191,189,239,191,189,32,32,69,118,105,108,32,75,97,114,109,97,58,32,32)..fmt(_0x2FC0.Value) end
+if _0x8A81 then _0x6291.Text=string.char(239,191,189,239,191,189,32,32,71,111,111,100,32,75,97,114,109,97,58,32,32)..fmt(_0x8A81.Value) end
+end) end end)
+_0x86AE:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,71,65,73,78,32,82,65,84,69,32,47,32,72,82,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0x05E7=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,83,116,114,47,104,114,58,32,32,119,97,114,109,105,110,103,32,117,112,46,46,46))
+local _0x4EB8=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,239,184,143,32,32,68,117,114,47,104,114,58,32,32,119,97,114,109,105,110,103,32,117,112,46,46,46))
+local _0x76E8,_0x8678={},{}
+task.spawn(function() while task.wait(0.5) do pcall(function()
+local _0xD859=tick()
+if _0x3974 then table.insert(_0x76E8,{_0x8559=_0xD859,v=_0x3974.Value}) end
+if _0xC8C5 then table.insert(_0x8678,{_0x8559=_0xD859,v=_0xC8C5.Value}) end
+while #_0x76E8>0 and _0xD859-_0x76E8[1].t>30 do table.remove(_0x76E8,1) end
+while #_0x8678>0 and _0xD859-_0x8678[1].t>30 do table.remove(_0x8678,1) end
+if #_0x76E8>=2 and _0x76E8[#_0x76E8].t~=_0x76E8[1].t then
+_0x05E7.Text=string.char(239,191,189,239,191,189,32,32,83,116,114,47,104,114,58,32,32)..fmt(math.floor((_0x76E8[#_0x76E8].v-_0x76E8[1].v)/(_0x76E8[#_0x76E8].t-_0x76E8[1].t)*3600))
+end
+if #_0x8678>=2 and _0x8678[#_0x8678].t~=_0x8678[1].t then
+_0x4EB8.Text=string.char(239,191,189,239,191,189,239,184,143,32,32,68,117,114,47,104,114,58,32,32)..fmt(math.floor((_0x8678[#_0x8678].v-_0x8678[1].v)/(_0x8678[#_0x8678].t-_0x8678[1].t)*3600))
+end
+end) end end)
+_0x86AE:AddLabel(string.char(226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,32,32,239,191,189,239,191,189,32,80,76,65,89,69,82,32,83,80,89,32,32,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129,226,148,129))
+local _0xEEBC=_0x5472
+local _0xFB0B=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,83,112,121,105,110,103,58,32,32)..LP.Name)
+local _0xCCAB=_0x86AE:AddLabel(string.char(239,191,189,239,191,189,32,32,83,116,97,116,115,32,108,111,97,100,105,110,103,46,46,46))
+_0x86AE:AddTextBox(string.char(69,110,116,101,114,32,112,108,97,121,101,114,32,110,97,109,101,32,116,111,32,115,112,121), function(v)
+local _0xF5D1=_0xF7E1(v); if _0xF5D1 then _0xEEBC=_0xF5D1; _0xFB0B.Text=string.char(239,191,189,239,191,189,32,32,83,112,121,105,110,103,58,32,32)..p.Name end
+end,{clear=false})
+task.spawn(function() while task.wait(1) do pcall(function()
+if not _0xEEBC then return end
+local _0x8F56=_0xEEBC:FindFirstChild(string.char(108,101,97,100,101,114,115,116,97,116,115))
+local _0xBDD2=_0x8F56 and _0x8F56:FindFirstChild(string.char(83,116,114,101,110,103,116,104)) and _0x020E(_0x8F56.Strength.Value) orstring.char(63)local _0xF8B0=_0xEEBC:FindFirstChild(string.char(68,117,114,97,98,105,108,105,116,121)) and _0x020E(_0xEEBC.Durability.Value) orstring.char(63)local _0xCEC5=_0x8F56 and _0x8F56:FindFirstChild(string.char(82,101,98,105,114,116,104,115)) and _0x020E(_0x8F56.Rebirths.Value) orstring.char(63)local _0x485A=_0x8F56 and _0x8F56:FindFirstChild(string.char(75,105,108,108,115)) and _0x020E(_0x8F56.Kills.Value) orstring.char(63)_0xCCAB.Text=string.char(239,191,189,239,191,189)..s1..string.char(32,32,239,191,189,239,191,189,239,184,143)..s2..string.char(32,32,239,191,189,239,191,189)..s3..string.char(32,32,226,154,148,239,184,143)..s4
+end) end end)_0x37B0:Show()
+_0xA10F(string.char(76,68,66,32,72,85,66),string.char(226,154,161,32,86,53,32,76,111,97,100,101,100,33,32,82,83,104,105,102,116,32,116,111,32,116,111,103,103,108,101,32,32,239,191,189,239,191,189,32,32,77,97,100,101,32,98,121,32,71,65,76,65,88,89),5)
